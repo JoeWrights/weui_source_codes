@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>weui-tabbar 导航</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="tabbar.css">
+    <link rel="stylesheet" href="badge.css">
+</head>
+
+<body>
+    <!-- 403状态码，资源不可用，因为没有这个权利，图片是https://weui.io的
+    而我们的地址是http://127.0.0.1:8080资源图片可以限制自己非自己域名的访问
+    img src http请求 127.0.0.1->https://weui.io-->
+    <div class="page tabbar">
+        <div class="page__bd"></div>
+        <!--block element modify-->
+        <!-- weui前缀 组件，轮子，Component -->
+        <!-- BEM weui-tab Block -->
+        <div class="weui-tab">
+            <div class="weui-tab__panel">
+
+            </div>
+            <div class="weui-tabbar">
+                <a href="" class="weui-tabbar__item weui-bar__item_on"><!--_on描述-->
+                    <span style="position: relative;display: inline-block;">
+                        <img src="icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                        <span class="weui-badge" style="position: absolute;top:-2px;right:-13px;">8</span>
+                    </span>
+                    <p class="weui-tabbar__label">微信</p>
+                </a>
+                <a href="" class="weui-tabbar__item">
+                    <span>
+                        <img src="icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                    </span>
+                    <p class="weui-tabbar__label">通讯录</p>
+                </a>
+                <a href="" class="weui-tabbar__item">
+                    <span>
+                        <img src="icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                    </span>
+                    <p class="weui-tabbar__label">发现</p>
+                </a>
+                <a href="" class="weui-tabbar__item">
+                    <span>
+                        <img src="icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                    </span>
+                    <p class="weui-tabbar__label">小程序</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

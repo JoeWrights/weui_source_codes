@@ -1,3 +1,7 @@
+/*
+*author:JoeWright
+*date:2020-10-9
+*/
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +16,7 @@ body,html{
     height: 100%;/*适合做单屏应用*/
     /* 手机不同厂商，做自己的一些体验，这是有损统一体验的，CSS希望所有的手机都一样，一张白纸，将厂商的欲望磨平，css reset */
     /* -webkit-tap-highlight-color不规范的属性 */
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: yellow;
     user-select: none;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
@@ -24,7 +28,6 @@ body{
 a{
     text-decoration: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    color:#1aad19;
 }
 .page,body{
     overflow: hidden;
@@ -38,42 +41,25 @@ a{
     left: 0;
 }
 .page{
-    overflow-y:none;
+    overflow-y: auto;
     /* 将滚动感知touch，体验更好 */
     -webkit-overflow-scrolling: touch;/*能感知滑动力度*/
     z-index: 1;
 }
 .page__hd{
-   text-align: center;
-   margin-top: 50px;
+    padding: 40px;
 }
-.page__hd img{
-    width: 50px;
-    height: 50px;
+.page__title{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
 }
 .page__desc{
-    color:#1aad19;
-    font-size: 18px;
+    margin-top: 5px;
+    color:#888;
+    text-align: left;
+    font-size: 14px;
 }
 .page__bd{
-    text-align: center;
-    margin-top: 80px;
+    padding: 0 15px;
 }
-.page__msg{
-    margin: 2px;
-}
-.page__ft .weui-btn{
-    width: 200px;
-    height: 40px;
-    border:1px solid #1aad19;
-    border-radius: 5px;
-    line-height: 40px;
-    text-align: center;
-    /* margin: 180px auto; */
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    margin-left: -100px;
-}
-
-
